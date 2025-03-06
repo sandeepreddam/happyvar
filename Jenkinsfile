@@ -2,7 +2,8 @@ pipeline {
     agent any
     environment {
 
-      $MAVEN_SAN
+        echo $MAVEN_HOME
+        echo $MAVEN_PATH
    }
     stages {
         stage('Clone Repository') {
